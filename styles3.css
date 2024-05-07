@@ -1,0 +1,291 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header and Footer */
+.header, .footer {
+    background-color: #1777f5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 10px 20px black;
+}
+
+.header__title {
+    font-size: 50px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.nav-item {
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 100px;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 8px 18px black;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #090909, #fff);
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Section Titles */
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #010314;
+}
+
+/* Movie Cards */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.movie-card {
+    border: 2px solid #ffffff;
+    background: linear-gradient(to bottom, #f7f7f7, #fff);
+    box-shadow: 0 9px 20px rgba(16, 11, 11, 0.975);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(30, 0, 0, 0.941);
+    border-color: #0303f6;
+    border-radius: 100px;
+}
+
+.movie-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Seat Selection */
+.seat-map {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 5px;
+}
+
+/* Styling for the Events section */
+.events {
+    border: 2px solid #ffffff;
+    background: linear-gradient(to bottom, #f7f7f7, #fff);
+    box-shadow: 0 9px 20px rgba(16, 11, 11, 0.975);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.events:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(30, 0, 0, 0.941);
+    border-color: #0303f6;
+    border-radius: 10px;
+}
+
+.events h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.events p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Add styling for the Booking History section */
+.booking-history {
+    background-color: #2e2e2e;
+    padding: 2rem;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.booking {
+    border: 2px solid #ffffff;
+    background: linear-gradient(to bottom, #7f7d7d, #ffffff);
+    box-shadow: 0 9px 20px rgba(16, 11, 11, 0.975);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.booking:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.941);
+    border-color: hsl(240, 92%, 5%);
+    border-radius: 0px;
+}
+
+.booking p {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Styling for the Offers section */
+.offers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Styling for individual offer cards */
+.offer-card {
+    border: 2px solid #ffffff;
+    background: linear-gradient(to bottom, #f7f7f7, #fff);
+    box-shadow: 0 9px 20px rgba(16, 11, 11, 0.975);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(30, 0, 0, 0.941);
+    border-color: #0303f6;
+    border-radius: 10px;
+}
+
+.offer-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.offer-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* User Information */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #565555;
+    border-radius: 100px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 40%;
+    margin-left: 12.5%;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgb(1, 223, 253);
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.user-email,
+.user-membership {
+    font-size: 1rem;
+    color: #fffefe;
+    margin-bottom: 0.3rem;
+}
+
+/* User Options */
+.user-options {
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-option {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #fffefe;
+    box-shadow: 0 8px 18px black;
+}
+
+.user-option:hover {
+    background-color: #00a64e;
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #1a1818, #fff);
+    color: white;
+}
+
+/* Style for the section title */
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #010314;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1777f5;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
